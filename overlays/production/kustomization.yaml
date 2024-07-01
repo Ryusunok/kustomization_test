@@ -1,10 +1,9 @@
 namespace: prod
 resources:
-  - ../../base/deployment.yaml
-  - ../../base/kustomization.yaml
+  - ../../base
   - namespace.yaml
   - configmap.yaml
-  - service.yaml
+
 images:
   - name: gcr.io/heptio-images/ks-guestbook-demo
     newTag: "0.1"
