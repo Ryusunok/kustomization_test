@@ -1,6 +1,7 @@
 namespace: prod
 resources:
-  - ../../base
+  - ../../base/deployment.yaml
+  - ../../base/kustomization.yaml
   - namespace.yaml
   - configmap.yaml
   - service.yaml
